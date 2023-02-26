@@ -1,0 +1,80 @@
+baseURL: "https://thegraydot.io/"
+languageCode: "en-us"
+title: "The Gray Dot"
+theme: "PaperMod"
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    # menu:
+    #   main:
+    #     - name: Posts
+    #       url: posts/
+    #       weight: 1
+    #     - name: Tags
+    #       url: tags/
+    #       weight: 2
+    #     - name: Series
+    #       url: series/
+    #       weight: 3
+    #     - name: Search
+    #       url: search/
+    #       weight: 4
+    #     - name: GitHub
+    #       url: https://github.com/TheGrayDot/
+
+params:
+  env: development  # production
+  author: Thomas Laurenson
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowShareButtons: true
+  ShowReadingTime: true
+  disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowToc: true
+  # comments: true
+  profileMode:
+    enabled: true
+    title: TheGrayDot
+    buttons:
+      - name: Coming soon...
+        url: #
+  # homeInfoParams:
+  #   Title: "Welcome to The Gray Dot"
+  #   Content: >
+  #     Welcome to the website and blog for The Gray Dot.
+  #     - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
+  #     - Do give a 🌟 on Github !
+  #     - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+  socialIcons:
+    - name: email
+      url: "mailto:tom@thegraydot.io"
+    - name: github
+      url: "https://github.com/TheGrayDot/"
+    - name: instagram
+      url: "https://www.instagram.com/thegraydot.io/"
+    - name: reddit
+      url: "https://www.reddit.com/user/thegraydot/"
+    # - name: Rss
+    #   url: "index.xml"
+  editPost:
+    URL: "https://github.com/TheGrayDot/thegraydot.github.io/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
